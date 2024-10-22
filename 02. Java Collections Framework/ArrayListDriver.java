@@ -8,12 +8,12 @@ public class ArrayListDriver {
         names.add("Jill");
         names.add("Paul");
         names.add("Sue"); // names now has Bill, Jill, Paul, Sue
-        names.add(1,"John"); //names now has Bill, John, Jill, Paul, Sue
+        names.add(1,"John");
+        names.add(3, "Bob");//names now has Bill, John, Jill, Paul, Sue
         //this requires elements after Bill to be shifted
 
         //output the contents of the list
-        for (int i = 0; i < names.size(); i++){
-            String name = names.get(i);
+        for (String name : names) {
             System.out.println(name);
         }
     }

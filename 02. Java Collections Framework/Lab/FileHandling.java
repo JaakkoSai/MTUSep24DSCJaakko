@@ -1,10 +1,12 @@
+package Lab;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class FileHandling {
     public static void main(String[] args) {
-        String fileName = "/workspace/MTUSep24DSC/02. Java Collections Framework/Lab/hamlet.txt";
+        String fileName = "C:\\Users\\T00260813\\OneDrive - Institute of Technology Tralee\\MTUSep24DSCJaakko\\02. Java Collections Framework\\Lab\\hamlet.txt";
 
         try {
             Scanner in = new Scanner(new File(fileName));
@@ -17,7 +19,7 @@ public class FileHandling {
                     String word = lineParser.next();
                     System.out.println("''"+ word + lineNumber);
                 }
-                in.close(); 
+                in.close();
                 lineParser.close();
             }
         } catch (FileNotFoundException e) {
