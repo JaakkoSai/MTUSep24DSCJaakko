@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
         // TODO code application logic here
-        int n = 8;
+        int n = 10;
         //Factorial fun = new Factorial();
         n = Factorial.factorial(n);
         // System.out.println(fun);
